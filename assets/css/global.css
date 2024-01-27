@@ -1,38 +1,24 @@
 * {
-  font-family: "roboto", "sans-serif";
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
-header {
-  background-color: brown;
-  height: 50px;
-  width: 100%;
+body {
+  background-color: #f6f8fc;
 }
 
 .content {
+  width: 100vw;
+  height: 100vh;
   padding: 1rem;
+  background-color: #fff;
 }
 
-.pokedex {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.pokedex li {
-  background-color: #14a06f;
-  margin: 0.5rem;
-  padding: 1rem 0.5rem;
-  border-radius: 1rem;
-  color: white;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.pokemon img {
-  max-width: 100%;
-  align-self: flex-end;
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
 }
